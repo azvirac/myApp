@@ -1,0 +1,63 @@
+
+<!--p>Find me in app/views/welcome/index.html.erb</p-->
+<html lang="en">
+<head>
+  <title>Dobrodosli na site</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= csrf_meta_tags %>
+  <%= javascript_include_tag "application" %>
+</head>
+ <style>
+	p.pos_fixed_2
+	{
+	position:fixed;
+	bottom:0;
+	top:250px;
+	left:400px;
+	}
+	p.pos_fixed_3
+	{
+	position:fixed;
+	bottom:0;
+	top:250px;
+	right:400px;
+	}
+	.center
+	{
+	 position:relative;
+	 top:100px;
+	 text-align:center;
+	 text-align:middle;
+	 font-style:italic;
+	}
+	a.linkovi
+	{
+	 position:absolute;
+	 bottom:150px;
+	 text-align:center;
+	 left:800px;
+	 font-style:oblique;
+	 font-size:1.275em;
+	}
+
+ </style>
+<body body-background-color="grey">
+
+	<h1 class="center" >Dobrodosli na site</h1>
+
+	<div>
+		<p class="pos_fixed_2" align="middle">
+			<img src="<%= image_path("slika2.jpg") %>" alt="some_text_2" width="304" height="228"><br/>
+		</p>
+	</div>
+	<div>
+		<p class="pos_fixed_3" align="middle">
+			<img src="<%= image_path("slika3.jpg") %>" alt="some_text_3" width="304" height="228"><br/>
+		</p>
+	</div>
+
+	<a href="http://www.orka.ba" class="linkovi">Click me...</a>
+
+</body>
+
+
